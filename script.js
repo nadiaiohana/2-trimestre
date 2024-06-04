@@ -41,3 +41,29 @@ const perguntas=[
     ]
   }
 ];
+
+let atual=0
+let perguntaAtual;
+
+fuction mostraPerguntas(){
+  perguntaAtual=perguntas[atual];
+  caixaPerguntas.textContent=perguntaAtual.enunciado;
+  mostraAlternativas();
+}
+
+function mostraAlternativa(){
+  for(const alternativa of perguntaAtual.alternativa){
+  const botaoAlternativas=document.createElement("button");
+  botaoAlternativas.textContent=alternativa;
+  caixaAlternativas.appendCheld(botaoAlternativas);
+  }
+}
+
+mostraPergunta();
+
+
+
+
+
+
+
