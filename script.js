@@ -41,18 +41,25 @@ const perguntas=[
   ]
     enunciado:"O que a palavra legend significa em português?",
     alternativas:[
+    {
       texto: "Lenda",
-      texto: "Legenda",
-    ]
+      afirmação:"afirmativa",
+  },
   }
-  {
+      texto: "Legenda",
+      afirmação:"afirmativa",
+  },
+  ]
     enunciado:"Em que período da pré-história o fogo foi descoberto?",
     alternativas:[
       texto: "Neolítico",
-      texto: "Paleolítico",
-    ]
+        afirmação:"afirmativa",
+  },
   }
-];
+      texto: "Paleolítico",
+        afirmação:"afirmativa",
+  },
+  ];
 
 let atual=0
 let perguntaAtual;
