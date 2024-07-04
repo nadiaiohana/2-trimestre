@@ -52,6 +52,7 @@ const perguntas=[
   ]
     enunciado:"Em que período da pré-história o fogo foi descoberto?",
     alternativas:[
+      {
       texto: "Neolítico",
         afirmação:"afirmativa",
   },
@@ -72,15 +73,16 @@ fuction mostraPerguntas(){
 }
 
 function mostraAlternativa(){
-  for(const alternativa of perguntaAtual.alternativa){
-  const botaoAlternativas=document.createElement("button");
-  botaoAlternativas.textContent=alternativa.texto;
-  botaoAlternativas.addEventListener("click, () => respostaSelecionada (alternativa));
-  caixaAlternativas.appendCheld(botaoAlternativas);
-  }
+    for(const alternativa of perguntaAtual.alternativa){
+      const botaoAlternativas=document.createElement("button");
+      botaoAlternativas.textContent=alternativa.texto;
+      botaoAlternativas.addEventListener("click, () => respostaSelecionada (alternativa));
+      caixaAlternativas.appendCheld(botaoAlternativas);
+        }
     }
+
 function respostaSelecionada(opcaoSelecionada){
-  const afirmacoes = opcaoSelecionada.afirmacoes;
+  const afirmacoes = opcaoSelecionada.afirmacao;
   historiaFinal= afirmacoes;
   atual++;
   mostraPergunta;
