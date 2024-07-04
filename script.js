@@ -6,7 +6,7 @@ const textoResultado=document.querySelector(".texto-resultado");
 
 const perguntas=[
   {
-  enunciado:"Qual o menor e o maior país do mundo?",
+  enunciado: "Qual o menor e o maior país do mundo?",
     alternativas:[
       {
       texto: "Mônaco e Canadá",
@@ -15,9 +15,11 @@ const perguntas=[
       {
      texto: "Vaticano e Rússia",
         afirmação:"afirmativa",
-  },
-  ]
-        enunciado:"Quantas casas decimais tem o número pi?",
+          }
+        ]
+      }
+    { 
+        enunciado: "Quantas casas decimais tem o número pi?",
     alternativas:[
   {
      texto: "Milhares",
@@ -26,9 +28,9 @@ const perguntas=[
   }
      texto: "Infinitas",
   afirmação:"afirmativa",
-  },
+   },
   ]
-    enunciado:"Atualmente, quantos elementos químicos a tabela periodica possui?",
+    enunciado: "Atualmente, quantos elementos químicos a tabela periodica possui?",
     alternativas:[
       {
       texto: "122",
@@ -39,7 +41,7 @@ const perguntas=[
     afirmação:"afirmativa",
   },
   ]
-    enunciado:"O que a palavra legend significa em português?",
+    enunciado: "O que a palavra legend significa em português?",
     alternativas:[
     {
       texto: "Lenda",
@@ -50,7 +52,7 @@ const perguntas=[
       afirmação:"afirmativa",
   },
   ]
-    enunciado:"Em que período da pré-história o fogo foi descoberto?",
+    enunciado: "Em que período da pré-história o fogo foi descoberto?",
     alternativas:[
       {
       texto: "Neolítico",
