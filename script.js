@@ -10,48 +10,54 @@ const perguntas=[
     alternativas:[
       {
       texto: "Mônaco e Canadá",
-        afirmação:"afirmativa",
+        afirmação:"parece que você se enganou, o Vaticano é o menor país do mundo e o maior é a Rússia",
       },
       {
      texto: "Vaticano e Rússia",
-        afirmação:"afirmativa",
+        afirmação:"resposta certa, parabéns!",
           }
         ]
-      }
-    { 
+    },
+    {
         enunciado: "Quantas casas decimais tem o número pi?",
     alternativas:[
   {
      texto: "Milhares",
-    afirmação:"afirmativa",
+    afirmação:"resposta certa, você é muito inteligente",
   },
   }
      texto: "Infinitas",
-  afirmação:"afirmativa",
-   },
-  ]
+  afirmação:"Vocẽ errou, a quantidade de casas decimais do número pi é muito grande mas existe um fim",
+       },
+     ]
+  },
+  {
     enunciado: "Atualmente, quantos elementos químicos a tabela periodica possui?",
     alternativas:[
       {
       texto: "122",
-        afirmação:"afirmativa",
+        afirmação:"parece que você se enganou",
   },
   }
       texto: "118",
-    afirmação:"afirmativa",
+    afirmação:"resposta certa, parabéns!",
+      }
+    ]
   },
-  ]
+  {
     enunciado: "O que a palavra legend significa em português?",
     alternativas:[
     {
       texto: "Lenda",
-      afirmação:"afirmativa",
+      afirmação:"resposta certa, parabéns",
   },
   }
       texto: "Legenda",
-      afirmação:"afirmativa",
-  },
-  ]
+      afirmação:"vocẽ se enganou, resposta errada",
+      }
+    ]
+ },
+ {
     enunciado: "Em que período da pré-história o fogo foi descoberto?",
     alternativas:[
       {
@@ -61,8 +67,10 @@ const perguntas=[
   }
       texto: "Paleolítico",
         afirmação:"afirmativa",
+       }
+    [
   },
-  ];
+];
 
 let atual = 0;
 let perguntaAtual;
@@ -75,7 +83,7 @@ function mostraPergunta() {
     }  
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
-  caixaAlternativas.textContent = "";
+    caixaAlternativas.textContent = "";
     mostraAlternativas();
 }
 function mostraAlternativas() {
@@ -88,7 +96,7 @@ function mostraAlternativas() {
 }
 
 function respostaSelecionada(opcaoSelecionada){
-            const afirmacoes = opcaoSelecionada.afirmacoes; mudar para opcaoSelecionada.afirmacao
+            const afirmacoes = opcaoSelecionada.afirmacoes; mudar para opcaoSelecionada.afirmação
             historiaFinal = += afirmacoes + " "; 
             atual++;
             mostraPergunta();
