@@ -61,12 +61,12 @@ const perguntas=[
     enunciado: "Em que período da pré-história o fogo foi descoberto?",
     alternativas:[
       {
-      texto: "Neolítico",
-        afirmação:"afirmativa",
+      texto: "Neolítico"
+        afirmação:"você errou, é bom estudar um pouco mais de história",
   },
   }
       texto: "Paleolítico",
-        afirmação:"afirmativa",
+        afirmação:"parabéns, resposta certa",
        }
     [
   },
